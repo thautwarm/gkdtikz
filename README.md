@@ -13,7 +13,12 @@ latexmk -pdf src.out.tex
 Writing simple trees via basic Yaml syntax.
 
 ```tex
+\documentclass{article}
 \usepackage{tikz} % use LaTex package 
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\begin{document}
 
 \gkd@usepackage{gkdtikz.tree} % use GkdTeX package
 
@@ -29,6 +34,7 @@ root:
       - \textit{italic}
       - \textrm{roman}
 }
+\end{document}
 ```
 
 ![simpletree](simpletree.PNG)
